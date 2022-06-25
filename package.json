@@ -2,9 +2,12 @@
   "name": "@renzp/babel-plugin-react-directive",
   "version": "0.0.1",
   "description": "基于React开发的指令语法糖",
-  "private":"true",
+  "private": "true",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsup --watch src",
+    "build": "tsup",
+    "pub": "npm run build && npm publish --access=public",
+    "test": "node test/index.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +24,10 @@
   },
   "homepage": "https://github.com/renzp94/babel-plugin-react-directive#readme",
   "devDependencies": {
+    "@babel/core": "^7.18.5",
+    "@babel/preset-react": "^7.17.12",
+    "@babel/types": "^7.18.4",
+    "@types/babel__core": "^7.1.19",
     "@types/node": "^18.0.0",
     "@typescript-eslint/eslint-plugin": "^5.29.0",
     "@typescript-eslint/parser": "^5.29.0",
@@ -31,6 +38,7 @@
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
+    "react": "^18.2.0",
     "tsup": "^6.1.2",
     "typescript": "^4.7.4"
   }
