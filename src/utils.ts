@@ -7,6 +7,16 @@ import type { JSXAttribute, JSXElement, JSXSpreadAttribute } from '@babel/types'
  */
 export const getElementAttrs = (path: NodePath<JSXElement>) => path.node.openingElement.attributes
 /**
+ * 元素属性是否有指令
+ * @param attrs 属性Node组
+ * @param directiveName 指令名
+ * @returns 有则返回true，否则返回false
+ */
+export const hasDirective = (
+  attrs: Array<JSXAttribute | JSXSpreadAttribute>,
+  directiveName: string
+) => !!attrs?.find((item) => (item as JSXAttribute)?.name?.name === directiveName)
+/**
  * 获取指令值
  * @param attrs 属性Node组
  * @param directiveName 指令名
