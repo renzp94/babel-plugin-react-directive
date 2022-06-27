@@ -5,5 +5,5 @@
 # 待办
 
 - [x] : r-if
+- [x] : r-show
 - [ ] : r-for
-- [ ] : r-show

@@ -5,7 +5,8 @@ import type { JSXAttribute, JSXElement, JSXSpreadAttribute } from '@babel/types'
  * @param path 当前元素
  * @returns 返回属性数组
  */
-export const getElementAttrs = (path: NodePath<JSXElement>) => path.node.openingElement.attributes
+export const getElementAttrs = (path: NodePath<JSXElement>) =>
+  path?.node?.openingElement?.attributes
 /**
  * 元素属性是否有指令
  * @param attrs 属性Node组
