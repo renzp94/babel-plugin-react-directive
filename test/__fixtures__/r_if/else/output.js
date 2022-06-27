@@ -4,7 +4,8 @@ const Test = () => {
   return /*#__PURE__*/ React.createElement(
     React.Fragment,
     null,
-    /*#__PURE__*/ React.createElement('div', null, 'else case')
+    /*#__PURE__*/ React.createElement('div', null, 'if block 1'),
+    /*#__PURE__*/ React.createElement('div', null, 'else block 2')
   )
 }
 
