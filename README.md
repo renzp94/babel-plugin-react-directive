@@ -4,6 +4,6 @@
 
 # 待办
 
-- [x] : r-if
-- [x] : r-show
-- [ ] : r-for
+- [x] r-if
+- [x] r-show
+- [ ] r-for
