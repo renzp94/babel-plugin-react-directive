@@ -6,4 +6,5 @@
 
 - [x] r-if
 - [x] r-show
+- [x] r-class
 - [ ] r-for

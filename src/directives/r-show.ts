@@ -1,11 +1,11 @@
 import type { NodePath } from '@babel/core'
-import type { JSXElement } from '@babel/types'
+import type { JSXAttribute, JSXElement } from '@babel/types'
 import { getDirectiveValue, getElementAttrs, hasDirective, removeDirectiveAttr } from './../utils'
 import { DIRECTIVE } from '../constants'
 import * as t from '@babel/types'
 
 export default (path: NodePath<JSXElement>) => {
-  const attrs = getElementAttrs(path)
+  const attrs = getElementAttrs(path) as JSXAttribute[]
   // 没有属性或者不存在r-show指令
   if (!attrs?.length || !hasDirective(attrs, DIRECTIVE.SHOW)) {
     return
