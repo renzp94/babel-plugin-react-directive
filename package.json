@@ -2,7 +2,7 @@
   "name": "@renzp/babel-plugin-react-directive",
   "version": "0.0.1",
   "description": "基于React开发的指令语法糖",
-  "private": "true",
+  "main": "lib/index.js",
   "scripts": {
     "dev": "tsup --watch src",
     "build": "tsup",
@@ -23,6 +23,9 @@
     "url": "https://github.com/renzp94/babel-plugin-react-directive/issues"
   },
   "homepage": "https://github.com/renzp94/babel-plugin-react-directive#readme",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
   "devDependencies": {
     "@babel/core": "^7.18.5",
     "@babel/preset-react": "^7.17.12",
