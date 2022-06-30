@@ -2,9 +2,9 @@
 
 基于React开发的指令语法糖
 
-# 待办
+# 指令
 
-- [x] r-if
-- [x] r-show
-- [x] r-class
-- [ ] r-for
+- r-if
+- r-show
+- r-class
+- r-for

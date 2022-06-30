@@ -4,4 +4,5 @@ export enum DIRECTIVE {
   ELSE_IF = 'r-else-if',
   SHOW = 'r-show',
   CLASS = 'r-class',
+  FOR = 'r-for',
 }
