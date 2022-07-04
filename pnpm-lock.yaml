@@ -15,6 +15,7 @@ specifiers:
   eslint: ^8.18.0
   eslint-config-prettier: ^8.5.0
   eslint-plugin-prettier: ^4.0.0
+  eslint-plugin-react-directives: ^3.0.0
   husky: ^8.0.1
   jest: ^28.1.1
   lint-staged: ^13.0.3
@@ -39,6 +40,7 @@ devDependencies:
   eslint: 8.18.0
   eslint-config-prettier: 8.5.0_eslint@8.18.0
   eslint-plugin-prettier: 4.0.0_bd3c4b21319ad16ec3ab54a1da22f60e
+  eslint-plugin-react-directives: 3.0.0_eslint@8.18.0
   husky: 8.0.1
   jest: 28.1.1_@types+node@18.0.0
   lint-staged: 13.0.3
@@ -1768,6 +1770,15 @@ packages:
       eslint-config-prettier: 8.5.0_eslint@8.18.0
       prettier: 2.7.1
       prettier-linter-helpers: 1.0.0
+    dev: true
+
+  /eslint-plugin-react-directives/3.0.0_eslint@8.18.0:
+    resolution: {integrity: sha512-WU+EtopvZxQU3a8R1XUS0+6HZfcr/mHbF79D6m8xUQH1HzqfyS/BNwmNfmcKg3MzUqCOFCtDhChAHQvsBlrvlg==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    peerDependencies:
+      eslint: ^8.0.0
+    dependencies:
+      eslint: 8.18.0
     dev: true
 
   /eslint-scope/5.1.1:

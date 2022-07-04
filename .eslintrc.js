@@ -17,9 +17,16 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
     'eslint:recommended',
+    'plugin:react-directives/recommended',
   ],
   rules: {
     'no-unused-vars': 'off',
+    'no-undef': 'off',
     '@typescript-eslint/no-unused-vars': 'error',
+  },
+  settings: {
+    'react-directives': {
+      prefix: 'r',
+    },
   },
 }
