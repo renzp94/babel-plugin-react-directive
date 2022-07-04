@@ -1,6 +1,6 @@
 {
   "name": "@renzp/babel-plugin-react-directive",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "基于React开发的指令语法糖",
   "main": "lib/index.js",
   "scripts": {
